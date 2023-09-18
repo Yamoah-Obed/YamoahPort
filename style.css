@@ -64,7 +64,7 @@ body{
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 10px;
     background-color: #333;
     z-index: 1;
