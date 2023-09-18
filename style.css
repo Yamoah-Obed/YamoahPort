@@ -1,0 +1,828 @@
+
+body{
+  margin: 0;
+}
+.fullpage {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+
+  .navbar {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed; 
+    width: 100%; 
+    top: 0;
+    align-items: center;
+    height: 35px;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 40px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.navbar-link.active-link {
+  color: red; 
+}
+
+
+.toggle-button {
+  display: none; 
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  padding-right: 40px;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    z-index: 1;
+    width: 100%;
+}
+
+
+.navbar-links.active {
+    display: flex;
+   
+}
+
+
+.toggle-button {
+    display: block;
+}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    z-index: 1;
+    width: 100%;
+}
+
+
+.navbar-links.active {
+    display: flex;   
+}
+
+
+.toggle-button {
+    display: block;
+}
+}
+
+
+
+  .Home {
+    background-color: white;
+    padding:20px;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .homeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding:20px;
+  }
+  
+  .leftSide {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .text {
+    font-size: 22px;
+    font-weight: bold;
+  
+  }
+  
+  .yamoah {
+    color: #007bff;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .HomeIcons {
+    margin-top: 40px;
+  }
+
+  .HomeIcons a{
+    text-decoration: none;
+
+  }
+  
+  .IconLink {
+    margin-right: 10px;
+
+  }
+
+  .HomeIcons a :hover{
+    color: #007bff;
+  }
+  
+  
+
+
+  
+  .pic img {
+    max-width: 90%;
+    height: auto;
+    
+  }
+  
+  .fadeIn {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    .Home {
+      padding: 10px;
+    }
+  
+    .homeContainer {
+      flex-direction: column-reverse;
+    }
+  
+    .leftSide {
+      text-align: center;
+    }
+  
+    .text {
+      font-size: 18px;
+    }
+  
+    .btn {
+      margin-top: 10px;
+    }
+  
+    .Icon {
+      font-size: 24px;
+    }
+    .pic img {
+      max-width: 70%;
+      height: auto;
+      
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .Home {
+      padding: 15px;
+    }
+  
+    .homeContainer {
+      padding: 40px;
+    }
+  
+    .text {
+      font-size: 22px;
+    }
+  
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* Add your desktop-specific styles here */
+    .Home {
+      padding: 30px;
+    }
+  
+    .homeContainer {
+      padding: 40px;
+    }
+  
+    .text {
+      font-size: 30px;
+    }
+  
+    .btn {
+      font-size: 18px;
+    }
+  
+    .Icon {
+      font-size: 36px;
+    }
+  
+    .homeContainer {
+      width: auto;
+      height: 100vh;
+     
+    }
+  
+   
+  }
+  
+  
+  /* Television Styles */
+  @media (min-width: 1279px) {
+    .Home {
+      padding: 30px;
+    }
+  
+    .homeContainer {
+      padding: 60px;
+    }
+  
+    .text {
+      font-size: 34px;
+    }
+  
+    .btn {
+      font-size: 18px;
+    }
+  
+    .Icon {
+      font-size: 36px;
+    }
+  } 
+
+
+
+
+
+  .About {
+    background-color: #f4f4f4;
+    padding: 60px;
+    text-align: center;
+  
+  }
+  
+  .AboutContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .AboutTitle h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .AboutLineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .AboutLine {
+    width: 50%;
+    height: 2px;
+    background-color: #007bff;
+  }
+  
+  .AboutText {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    .AboutTitle h2 {
+      font-size: 20px;
+    }
+  
+    .AboutLine {
+      width: 30%;
+    }
+  
+    .AboutText {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .AboutTitle h2 {
+      font-size: 22px;
+    }
+  
+    .AboutLine {
+      width: 40%;
+    }
+  
+    .AboutText {
+      font-size: 16px;
+      padding: 15px;
+    }
+  }
+  
+  /* Television Styles */
+  @media (min-width: 1024px) {
+    .AboutTitle h2 {
+      font-size: 28px;
+    }
+  
+    .AboutLine {
+      width: 60%;
+    }
+  
+    .AboutText {
+      font-size: 18px;
+      padding: 30px;
+    }
+  }
+
+
+
+  .Skills {
+    background-color: #fff;
+    padding: 60px;
+    text-align: center;
+  }
+  
+  .SkillsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .SkillsTitle h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .SkillsLineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .SkillsLine {
+    width: 50%;
+    height: 2px;
+    background-color: #007bff;
+  }
+  
+  .skillListContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skillList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    border-radius: 15px;
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    background-color: #007bff;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+
+  
+
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    .SkillsTitle h2 {
+      font-size: 20px;
+    }
+  
+    .SkillsLine {
+      width: 30%;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .SkillsTitle h2 {
+      font-size: 22px;
+    }
+  
+    .SkillsLine {
+      width: 40%;
+    }
+  }
+  
+  /* Television Styles */
+  @media (min-width: 1024px) {
+    .SkillsTitle h2 {
+      font-size: 28px;
+    }
+  
+    .SkillsLine {
+      width: 60%;
+    }
+  }
+ 
+  
+
+
+
+.Portfolio {
+    background-color: #f4f4f4;
+    padding: 60px;
+    text-align: center;
+  }
+  
+  .PortfolioContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .PortfolioTitle h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .PortfolioLineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .PortfolioLine {
+    width: 50%;
+    height: 2px;
+    background-color: #007bff;
+  }
+  
+  .Portfolio p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .portfolioListContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .portfolioList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+
+  .project img{
+    width: 300px;
+    height: 210px;
+  }
+  .project {
+    border-radius: 15px;
+    width: 300px;
+    height: 280px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+  .project:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+
+  
+  
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    .PortfolioTitle h2 {
+      font-size: 20px;
+    }
+  
+    .PortfolioLine {
+      width: 30%;
+    }
+  
+    .Portfolio p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .PortfolioTitle h2 {
+      font-size: 22px;
+    }
+  
+    .PortfolioLine {
+      width: 40%;
+    }
+  
+    .Portfolio p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Television Styles */
+  @media (min-width: 1024px) {
+    .PortfolioTitle h2 {
+      font-size: 28px;
+    }
+  
+    .PortfolioLine {
+      width: 60%;
+    }
+  
+    .Portfolio p {
+      font-size: 18px;
+    }
+  }
+
+
+
+
+
+  .Resume {
+    background-color: #fff;
+    padding: 60px;
+    text-align: center;
+    height: auto;
+  }
+  
+  .ResumeContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .ResumeTitle h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .ResumeLineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .ResumeLine {
+    width: 50%;
+    height: 2px;
+    background-color: #007bff;
+  }
+  
+  .file img{
+    width: 80px;
+    height: 80px;
+  }
+  .file{
+    
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+  }
+  .fileContainer a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .resumeText p{
+    font-size: 20px;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    .ResumeTitle h2 {
+      font-size: 20px;
+    }
+  
+    .ResumeLine {
+      width: 30%;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .ResumeTitle h2 {
+      font-size: 22px;
+    }
+  
+    .ResumeLine {
+      width: 40%;
+    }
+  }
+  
+  /* Television Styles */
+  @media (min-width: 1024px) {
+    .ResumeTitle h2 {
+      font-size: 28px;
+    }
+  
+    .ResumeLine {
+      width: 60%;
+    }
+  }
+  
+  
+
+  .Contact {
+    background-color: #f4f4f4;
+    padding: 60px;
+    text-align: center;
+  }
+  
+  .ContactContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .ContactTitle h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .ContactLineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .ContactLine {
+    width: 50%;
+    height: 2px;
+    background-color: #007bff;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button.submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    .ContactTitle h2 {
+      font-size: 20px;
+    }
+  
+    .ContactLine {
+      width: 30%;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .ContactTitle h2 {
+      font-size: 22px;
+    }
+  
+    .ContactLine {
+      width: 40%;
+    }
+  }
+  
+  /* Television Styles */
+  @media (min-width: 1024px) {
+    .ContactTitle h2 {
+      font-size: 28px;
+    }
+  
+    .ContactLine {
+      width: 60%;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      font-size: 20px;
+    }
+  
+    button.submit {
+      font-size: 22px;
+    }
+  }
+  
+  
+
+
+  .Footer {
+    align-items: center;
+    text-align: center;
+    background-color: #007bff; /* Footer background color */
+    color: white; /* Font color */
+    height: 120px;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .FooterIconLink {
+    margin: 15px;
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+    transition: color 0.3s;
+    padding-top: 20px;
+  }
+  
+  .FooterIconLink:hover {
+    color: white; 
+    
+  }
+  
+  .FooterIcon {
+    margin-top: 10px;
+    width: 40px; 
+    height: 45px;
+  }
+
+  .FooterIconLink a{
+    text-decoration: none;
+  }
+  
+  .footerText {
+    font-size: 16px;
+  }
+  

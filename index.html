@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamoah-Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2fb0a02a4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fullpage">
+
+      <nav class="navbar">
+        <a class="navbar-logo" href="#">Yamoah</a>
+        <div class="toggle-button" onclick="toggleNavbar()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="navbar-links">
+          <a class="navbar-link" href="#" onclick="closeNavbar(),toggleActive(this)">Home</a>
+          <a class="navbar-link" href="#About" onclick="closeNavbar(),toggleActive(this)">About</a>
+          <a class="navbar-link" href="#Skills" onclick="closeNavbar(),toggleActive(this)">Skills</a>
+          <a class="navbar-link" href="#Portfolio" onclick="closeNavbar(),toggleActive(this)">Portfolio</a>
+          <a class="navbar-link" href="#Resume" onclick="closeNavbar(),toggleActive(this)">Resume</a>
+          <a class="navbar-link" href="#Contact" onclick="closeNavbar(),toggleActive(this)">Contact</a>
+      </div>
+    </nav>
+    <script>
+      let isNavbarOpen = false;
+
+      function toggleNavbar() {
+          const navbarLinks = document.querySelector('.navbar-links');
+          if (!isNavbarOpen) {
+              navbarLinks.classList.add('active');
+          } else {
+              navbarLinks.classList.remove('active');
+          }
+          isNavbarOpen = !isNavbarOpen;
+      }
+
+      function closeNavbar() {
+            const navbarLinks = document.querySelector('.navbar-links');
+            navbarLinks.classList.remove('active');
+            isNavbarOpen = false;}
+
+      function toggleActive(clickedLink) {
+        const links = document.querySelectorAll(".navbar-link");
+         links.forEach(function (link) {
+            link.classList.remove('active-link');
+            });
+            clickedLink.classList.add('active-link');
+        }       
+
+
+  </script>
+
+            <div class="Home" id="Home">
+                <div class="homeContainer">
+                  <div class="leftSide">
+                    <div class="text">
+                      <h1>
+                        Hi There,
+                        <div>
+                          I am <span class="yamoah">YAMOAH</span>
+                        </div>
+                        <div> Front-End Developer</div>
+                      </h1>
+                    </div>
+                    <div>
+                      <a href="#Contact">
+                        <button class="btn">Contact</button>
+                      </a>
+                    </div>
+        
+                    <div class="HomeIcons">
+                      <a href="https://github.com/Yamoah-Obed" class="IconLink">
+                        <i class="fa-brands fa-github" style="color: rgb(72, 72, 90);font-size: 35px;"></i>
+                      </a>
+                      <a href="www.linkedin.com/in/obed-yamoah-94881a257" class="IconLink">
+                        <i class="fa-brands fa-linkedin" style="color: rgb(72, 72, 90);font-size: 35px;"></i>
+                      </a>
+                      <a href="" class="IconLink">
+                        <i class="fa-solid fa-envelope" style="color: rgb(72, 72, 90);font-size: 35px;"></i>
+                      </a>
+                      <a href="" class="IconLink">
+                        <i class="fa-brands fa-twitter" style="color: rgb(72, 72, 90); font-size: 35px;"></i>
+                      </a>
+                    </div>
+                  </div>
+        
+                  <div class="pic">
+                    <img src="assets/mypic.jpeg" alt="my pic"  width="600">
+                  </div>
+                </div>
+              </div>
+
+
+            <section class="About" id="About">
+                <div class="AboutContainer">
+                  <div class="AboutTitle">
+                    <h2>ABOUT ME</h2>
+                  </div>
+                  <div class="AboutLineContainer">
+                    <div class="AboutLine"></div>
+                  </div>
+                </div>
+                <div class="AboutText">
+                  <p>
+                    I am a passionate and driven individual with a deep enthusiasm for
+                    technology and innovation. My journey began with a curiosity about how
+                    things work, which led me to explore the world of computers and
+                    programming. As I delved into the realm of coding, I discovered my
+                    love for creating meaningful and impactful solutions through software.
+                    With a strong educational background in computer science and years of
+                    hands-on experience, I have honed my skills in various programming
+                    languages and frameworks. From crafting elegant and efficient code to
+                    solving complex problems, I thrive on challenges that push me to think
+                    critically and creatively. My ability to adapt and learn quickly has
+                    allowed me to stay current in a rapidly evolving technological
+                    landscape. Beyond the technical aspects, I believe in the power of
+                    collaboration and effective communication. I enjoy working in dynamic
+                    teams where diverse perspectives come together to drive innovation. My
+                    interpersonal skills and open-minded approach make me not only a
+                    valuable team member but also a reliable leader when the situation
+                    calls for it. Outside the realm of coding, I am an avid explorer of
+                    other interests. Nature beckons me for rejuvenating hikes, and I find
+                    solace in capturing its beauty through photography. Reading is another
+                    passion of mine, as it offers a gateway to diverse worlds and new
+                    ideas. These experiences fuel my creativity and bring a unique
+                    perspective to my work.
+                  </p>
+                </div>
+              </section>
+
+
+              <section class="Skills" id="Skills">
+                <div class="SkillsContainer">
+                  <div class="SkillsTitle">
+                    <h2>SKILLS</h2>
+                  </div>
+                  <div class="SkillsLineContainer">
+                    <div class="SkillsLine"></div>
+                  </div>
+                </div>
+                <div class="skillListContainer">
+                  <div class="skillList">
+                    <div class="card">REACT</div>
+                    <div class="card">FIGMA</div>
+                    <div class="card">HTML</div>
+                    <div class="card">CSS</div>
+                    <div class="card">JAVASCRIPT</div>
+                  </div>
+                </div>
+              </section>
+
+
+              <section class="Portfolio" id="Portfolio">
+                <div class="PortfolioContainer">
+                  <div class="PortfolioTitle">
+                    <h2>PORTFOLIO</h2>
+                  </div>
+                  <div class="PortfolioLineContainer">
+                    <div class="PortfolioLine"></div>
+                  </div>
+                  <p >CHECK OUT SOME OF MY PROJECTS</p>
+                </div>
+                <div class="p">
+                  <div class="portfolioListContainer">
+                  <div class="portfolioList">
+                    <div class="project">
+                      <img src="./assets/Capture.jpg" alt="">
+                      <h2>school mgt</h2>
+                    </div>
+                    <div class="project">
+                      <img src="./assets/Capture.jpg" alt="">
+                      <h2>school mgt</h2>
+                    </div>
+                    <div class="project">
+                      <img src="./assets/Capture.jpg" alt="">
+                      <h2>school mgt</h2>
+                    </div>
+                    <div class="project">
+                      <img src="./assets/Capture.jpg" alt="">
+                      <h2>school mgt</h2>
+                    </div>
+                  </div>
+                </div></div>
+                
+              </section>
+            
+
+
+              <section class="Resume" id="Resume">
+                <div class="ResumeContainer">
+                  <div class="ResumeTitle">
+                    <h2>RESUME</h2>
+                  </div>
+                  <div class="ResumeLineContainer">
+                    <div class="ResumeLine"></div>
+                  </div>
+                  <div class="resumeText"><p>DOWNLOAD MY CV AND RESUME</p></div>
+                  <div class="fileContainer">
+                  <a href="assets/CURRICULUM VITAE(Obed).pdf" download>
+                    <div class="file">
+                      <img src="./assets/PDF_file_icon.svg.png" alt="cv" />
+                    <h2>CV</h2>
+                    </div>
+                  </a>   
+                    
+                  </div>
+                </div>
+              </section>
+
+
+
+              <section class="Contact" id="Contact">
+                <div class="ContactContainer">
+                  <div class="ContactTitle">
+                    <h2>CONTACT ME</h2>
+                  </div>
+                  <div class="ContactLineContainer">
+                    <div class="ContactLine"></div>
+                  </div>
+                </div>
+                <div>
+                  <form id="contact-form">
+                    <input
+                      placeholder="Name"
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                    />
+          
+                    <input
+                      placeholder="E-mail"
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                    />
+          
+                    <textarea
+                      placeholder="Text......"
+                      id="message"
+                      name="message"
+                      rows="9"
+                      required
+                    ></textarea>
+          
+                    <button class="submit" type="submit">
+                      Send
+                    </button>
+                  </form>
+                </div>
+              </section>
+
+
+              <div class="Footer">
+                <div class="FooterIconLink">
+                  <a href="" class="FooterIconLink">
+                    <i class="fa-brands fa-github" style="color: rgb(72, 72, 90);font-size: 38px;"></i>
+                  </a>
+                  <a href="" class="IconLink">
+                    <i class="fa-brands fa-linkedin" style="color: rgb(72, 72, 90);font-size: 38px;"></i>
+                  </a>
+                  <a href="" class="IconLink">
+                    <i class="fa-solid fa-envelope" style="color: rgb(72, 72, 90);font-size: 38px;"></i>
+                  </a>
+                  <a href="" class="IconLink">
+                    <i class="fa-brands fa-twitter" style="color: rgb(72, 72, 90); font-size: 38px;"></i>
+                  </a>
+                </div>
+          
+                <div class="footerText">
+                  <p>
+                    <i class="fa-regular fa-copyright"></i> 2023 Yamoah.com
+                  </p>
+                </div>
+              </div>
+
+    </div>
+
+    
+    
+
+
+    <script src="script.js"></script>
+
+
+    <script>
+      let isRightSideVertical = false;
+
+      function toggleRightSide() {
+          const rightSide = document.querySelector('.rightside');
+          if (!isRightSideVertical) {
+              rightSide.classList.add('active');
+          } else {
+              rightSide.classList.remove('active');
+          }
+          isRightSideVertical = !isRightSideVertical;
+      }
+  </script>
+    
+</body>
+</html>
