@@ -69,14 +69,15 @@ body{
     background-color: #333;
     z-index: 1;
     width: 100%;
+    padding : 10px;
 }
-
 
 .navbar-links.active {
-    display: flex;
-   
+    display: flex;  
 }
-
+.navbar-links a{
+  padding: 10px;
+}
 
 .toggle-button {
     display: block;
@@ -93,12 +94,9 @@ body{
     z-index: 1;
     width: 100%;
 }
-
-
 .navbar-links.active {
     display: flex;   
 }
-
 
 .toggle-button {
     display: block;
