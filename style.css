@@ -532,7 +532,10 @@ body{
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
+.portfolioList a{
+  text-decoration: none;
+}
 
   .project img{
     width: 300px;
